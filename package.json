@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "predicting strat-o-matic cards",
   "main": "app.js",
+  "bin": {
+    "seed": "./.bin/seed.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "seed": "node ./.bin/seed.js"
   },
   "author": "Matthew Butler",
   "license": "MIT",
@@ -14,6 +17,7 @@
     "lodash": "^4.17.4",
     "mkdirp": "^0.5.1",
     "npm": "^6.9.0",
-    "pdfkit": "^0.8.0"
+    "pdfkit": "^0.8.0",
+    "puppeteer": "^5.4.0"
   }
 }
